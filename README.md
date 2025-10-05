@@ -13,10 +13,14 @@ and then run the notebook *main.py*.
 
 
 ### Content of the files:
-- *1_corpus_utils.py* contains the code to download the corpus and some of the preprocessing steps (no tokenization is applied, only cleaning and linearization fonctions).
-- *2_data_preprocessing.py* contains the code with the encoder/tokenizer to further preprocess the input data (with tokenization applied).
-- *3_train.py* contains the code for the training phase of the model.
-- *4_generation.py* contains the code to generate the fine-tuned model answers.
-- *5_evaluation.py* contains all the metrics used for the evaluation phase and their scores.
-- *evaluation.csv* reports all the evaluation scores performed by the model (Bleu, Rouge-1, Rouge-2, Rouge-L, chrf++).
-- And *main.py*, the file to rune, contains fonctions to run all the previous *\*.py* files.
+- Folder Code contain :- 
+  - *corpus_utils.py* contains the code to download the corpus and some of the preprocessing steps (no tokenization is applied, only cleaning and linearization fonctions).
+  - *data_preprocessing.py* contains the code with the encoder/tokenizer to further preprocess the input data (with tokenization applied).
+  - *train.py* contains the code for the training phase of the model.
+  - *generation.py* contains the code to generate the fine-tuned model answers.
+  - *evaluation.py* contains all the metrics used for the evaluation phase and their scores.
+  - And *main.py*, the file to rune, contains fonctions to run all the previous *\*.py* files.
+- Folder results contain :-
+  - *evaluation.csv* reports all the evaluation scores performed by the model (Bleu, Rouge-1, Rouge-2, Rouge-L, chrf++).
+  - *t5_small_after_fine_tuning.json* which contain the generated output of the model after finetuned on E2E NLG corpus
+  - *t5_small_before_fine_tuning.json* contain generated output of the model before finetuning. 
