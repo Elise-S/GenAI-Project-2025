@@ -27,11 +27,11 @@ def main():
     test_ds = generate_predictions(translator, tokenizer, test_ds) # geneating the predictions of the dataset test
 
 
-    json_file = 't5_small_e2e_nlg_gen-response.json'  #  saving the  predictions into JSON
+    json_file = 'GenAI-Project-2025/results/t5_small_after_fine_tuning.json'  #  saving the  predictions into JSON
     test_ds.to_json(json_file)
 
     # Step 7: Evaluate and save scores
-    csv_file = "evaluation_scores.csv"
+    csv_file = "GenAI-Project-2025/results/evaluation_scores.csv"
     evaluate_and_save_scores(json_file, csv_file)
 
 
