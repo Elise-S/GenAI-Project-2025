@@ -1,0 +1,9 @@
+transformers[torch]
+datasets==3.6.0
+ctranslate2
+evaluate
+sacrebleu
+rouge_score
+tqdm
+pandas
+torch
